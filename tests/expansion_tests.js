@@ -3,6 +3,7 @@ import { Selector } from 'testcafe';
 fixture `Angular page tests`
     .page `https://material.angular.io/components/expansion/examples`; 
 
+const accordionWithExpandCollapse = Selector('#expansion-expand-collapse-all');    
 const name = Selector('#mat-input-0');
 const age = Selector('#mat-input-1');
 const date = Selector('#mat-input-3');
@@ -12,6 +13,7 @@ const cell = row.find('td').nth(4).child('div');
 
 test('Accordion with expand/collapse', async t => {
     await t
+        .hover(accordionWithExpandCollapse)
         .click(Selector('span').withText('Personal data'))
         .typeText(name,'John')
         .typeText(age,'26')
@@ -27,7 +29,6 @@ const expansionPanelAsAccordion = Selector('#mat-expansion-panel-header-5');
 const nameExpansionPanel = Selector('#mat-input-4');
 const ageExpansionPanel = Selector('#mat-input-5');
 const nextButton = Selector('span').withText('Next');
-//const previousButton = Selector('span').withText('Previous');
 const destination = Selector('#mat-input-6');
 const date_second = Selector('#mat-input-7');
 

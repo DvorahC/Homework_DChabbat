@@ -20,6 +20,13 @@ testcafe chrome expansion_tests.js
 5. Looking for ways to get down the page, ---> ending up using hover() 
 6. Difference between value and innerText in order to retrieve the value in the assertion.
 
+7. I tried to create a page object for the page where the elements are located and to add some functions in order to make the tests nicer. But when I implemented it, it could not find the import...so I am not using it in my tests. 
+
+## Ideas for improvement:
+1. Build a page object model 
+2. Enhance the test with the function for the page 
+3. Create an object for the data ( Name, age, Destination...)
+
 
 Thanks ! it was FUN!
 Dvorah
