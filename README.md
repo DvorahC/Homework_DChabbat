@@ -24,9 +24,9 @@ testcafe chrome expansion_tests.js
 
 ## Ideas for improvement:
 1. Build a page object model 
-2. Enhance the test with the function from the page 
-3. Create an object for the data ( Name, age, Destination...)
-
+2. Enhance the test with the functions from the page 
+3. Create an object for the data (Name, age, Destination...) in order to avoid having them hardcoded...
+4. Add a set up and after test
 
 Thanks ! it was FUN!
 Dvorah
